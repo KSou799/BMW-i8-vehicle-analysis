@@ -1,69 +1,85 @@
-# BMW i8 Vehicle Performance Analysis (GNU Octave)
+# FlexiCity – Energy Peak Simulator  
 
-This project performs a vehicle dynamics analysis of the BMW i8 Coupe using GNU Octave / MATLAB.
-It evaluates tractive force, resistive forces, and acceleration performance based on engineering calculations.
-The project is intended for educational and engineering analysis purposes.
+**Urban Circular Hack Helsinki 2025** — Helsinki, Finland  
 
-## Objective
-- Analyze vehicle acceleration capability
-- Evaluate tractive force vs resistive forces
-- Study the influence of aerodynamic drag, rolling resistance, and road gradient
+---
 
-## Methods
-- Tractive force calculated from engine torque, gear ratios, final drive, and efficiency
-- Aerodynamic drag modeled using drag coefficient and frontal area
-- Rolling resistance modeled using axle loads and tire parameters
-- Grade resistance evaluated for different road inclinations
-- Acceleration calculated including drivetrain inertia effects
+## Why FlexiCity?
 
-## Vehicle Assumptions
-- **Vehicle:** BMW i8 Coupe
-- **Mass:** 1530 kg
-- **Max Power:** 275 kW
-- **Transmission:** 6-speed gearbox
-- **Cd:** 0.26, **Frontal Area:** 2.13 m²
-- Parameters based on published specifications
+Every evening around **7 pm**, Helsinki experiences a **sharp electricity spike**. EVs charge, heaters run, dinner is cooked, and appliances draw power simultaneously. This drives up electricity prices, stresses the grid, and could force the city to spend **€2 billion+ on upgrades over 5–7 years**.  
 
-## Outputs
-The script generates the following plots:
-- Aerodynamic drag and power vs speed
-- Rolling resistance force and power vs speed
-- Power required for different road gradients
-- Tractive force vs resistance (all gears + CVT comparison)
-- Acceleration vs speed for each gear
+**FlexiCity** demonstrates how **smart scheduling of flexible devices** can flatten the peak, saving money, cutting CO₂ emissions, and reducing infrastructure strain.  
 
-## Sample Results
+---
 
-### Figure 1 – Aerodynamic Drag Analysis
-![Aerodynamic Drag](aerodynamic_drag.png)
+## Key Impact
 
-### Figure 2 – Rolling Resistance Analysis
-![Rolling Resistance](rolling_resistance.png)
+| Benefit | Potential Result |
+|---------|----------------|
+| **User Savings** | Up to **€16+ per day** |
+| **CO₂ Reduction** | Up to **3,400+ tCO₂/year** |
+| **City Grid** | Delay/avoid **€2 billion+ upgrades** |
 
-### Figure 3 – Grade Resistance Analysis
-![Grade Resistance](grade_resistance.png)
+---
 
-### Figure 4 – Tractive Force Graph
-![Tractive Force](tractive_force.png)
+## How It Works
 
-### Figure 5 – Acceleration Performance
-![Acceleration](acceleration.png)
+- **Before:** Devices run on default schedules — typical user behavior  
+- **After:** Smart scheduling shifts flexible devices to off-peak hours  
 
-## How to Run
-1. Install GNU Octave
-2. Run the main script:
-```octave
-   MainScript
-```
-3. All analyses execute automatically and figures open in separate windows
+**Interactive sliders:**  
+- Flex participation (number of devices that shift)  
+- Grid vs Price optimization  
+
+**Scenarios:** Baseline, Winter, 2030 Future  
+
+---
+
+## Screenshot
+
+![FlexiCity Screenshot](screenshot.png)
+
+*Top graph:* peak demand  
+*Bottom graph:* demand flattened via smart scheduling  
+
+---
+
+## Tech Stack
+
+- **Python 3.8+**  
+- **tkinter** (standard library only)  
+
+---
+
+## License
+
+**MIT** — free to use and modify  
+
+---
 
 ## Skills Demonstrated
-- Vehicle dynamics
-- Engineering modeling and assumptions
-- Numerical computation in GNU Octave
-- Data visualization and interpretation
+
+- **Energy Systems Modeling** – Peak demand analysis and load curve simulation  
+- **Load Shifting Strategy Design** – Flexible device scheduling algorithms  
+- **Sustainability Impact Estimation** – CO₂ reduction and cost modeling  
+- **Data Visualization** – Demand curve comparison and simulation outputs  
+- **Python Development** – GUI application built with `tkinter`  
+- **Systems Engineering Thinking** – Urban infrastructure optimization modeling  
+- **Decision-Support Tool Design** – Translating engineering analysis into actionable insights  
+
+---
 
 ## Author
+
 **Sou Komiya**  
 Mechanical Engineering Student – Metropolia UAS  
-January 2026
+December 2025  
+
+---
+
+## Run the Simulator
+
+```bash
+git clone https://github.com/KSou799/Urban-Circular-Hack-Helsinki-2025-Helsinki-Finland.git
+cd Urban-Circular-Hack-Helsinki-2025-Helsinki-Finland
+python Hackathon_energy.py
