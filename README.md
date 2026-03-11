@@ -86,10 +86,3 @@ MainScript
 
 3. All figures generate automatically in separate windows.
 
----
-
-## Author
-
-**Sou Komiya**  
-Mechanical Engineering Student – Metropolia UAS  
-January 2026
